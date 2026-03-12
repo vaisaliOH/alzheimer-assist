@@ -1,0 +1,514 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Alzheimer's-specific object priority annotations for COCO dataset classes",
+    "author": "Alzheimer Assist Research Team",
+    "date": "2026-03-08",
+    "total_objects": 80,
+    "citation": "Novel dataset contribution for multi-modal cognitive assistance system",
+    "priority_levels": {
+      "CRITICAL": "High loss frequency, significant safety/daily functioning impact",
+      "HIGH": "Daily necessities, moderate impact if lost",
+      "MEDIUM": "Helpful items, minor inconvenience if lost",
+      "LOW": "Rarely lost or easily replaced"
+    }
+  },
+  "objects": {
+    "person": {
+      "priority": "CRITICAL",
+      "loss_frequency": "high",
+      "safety_risk": "high",
+      "typical_locations": ["living room", "bedroom", "kitchen"],
+      "alzheimer_notes": "Recognizing family members is paramount; confusion causes severe distress",
+      "search_assistance": "Use face recognition system instead of object detection"
+    },
+    "cell phone": {
+      "priority": "CRITICAL",
+      "loss_frequency": "very_high",
+      "safety_risk": "high",
+      "typical_locations": ["charging dock", "nightstand", "couch cushions", "pocket"],
+      "alzheimer_notes": "Essential for emergency calls and caregiver contact",
+      "search_assistance": "Check common placement spots first; can call to locate"
+    },
+    "remote": {
+      "priority": "HIGH",
+      "loss_frequency": "very_high",
+      "safety_risk": "low",
+      "typical_locations": ["couch", "coffee table", "between cushions"],
+      "alzheimer_notes": "Frequently misplaced; frustration when unable to control TV",
+      "search_assistance": "Check under cushions, armrests, side tables"
+    },
+    "keys": {
+      "priority": "CRITICAL",
+      "loss_frequency": "very_high",
+      "safety_risk": "high",
+      "typical_locations": ["key hook", "door lock", "purse", "pants pocket"],
+      "alzheimer_notes": "May forget where placed; wandering risk if lost outside",
+      "search_assistance": "Check entryway, pockets, table by door"
+    },
+    "handbag": {
+      "priority": "CRITICAL",
+      "loss_frequency": "high",
+      "safety_risk": "medium",
+      "typical_locations": ["bedroom", "closet", "chair", "near door"],
+      "alzheimer_notes": "Contains wallet, ID, medications - critical items",
+      "search_assistance": "Check bedroom, closet, hooks near entrance"
+    },
+    "wallet": {
+      "priority": "CRITICAL",
+      "loss_frequency": "high",
+      "safety_risk": "high",
+      "typical_locations": ["nightstand", "purse", "pants pocket", "dresser"],
+      "alzheimer_notes": "Contains ID, money, insurance cards - essential for outings",
+      "search_assistance": "Check pockets, purse, nightstand, dresser drawers"
+    },
+    "glasses": {
+      "priority": "HIGH",
+      "loss_frequency": "very_high",
+      "safety_risk": "medium",
+      "typical_locations": ["nightstand", "bathroom", "top of head", "shirt collar"],
+      "alzheimer_notes": "Needed for reading/TV; may forget wearing them",
+      "search_assistance": "Check face, nightstand, bathroom counter, case"
+    },
+    "book": {
+      "priority": "MEDIUM",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["nightstand", "living room", "armchair"],
+      "alzheimer_notes": "Reading provides cognitive stimulation",
+      "search_assistance": "Check favorite reading spots, bookshelf"
+    },
+    "cup": {
+      "priority": "MEDIUM",
+      "loss_frequency": "high",
+      "safety_risk": "low",
+      "typical_locations": ["kitchen", "coffee table", "nightstand"],
+      "alzheimer_notes": "May forget location of drinking water; dehydration risk",
+      "search_assistance": "Check kitchen counter, tables, microwave"
+    },
+    "bottle": {
+      "priority": "HIGH",
+      "loss_frequency": "medium",
+      "safety_risk": "medium",
+      "typical_locations": ["refrigerator", "kitchen counter", "backpack"],
+      "alzheimer_notes": "Hydration critical; medication bottles are also detected",
+      "search_assistance": "Check refrigerator, kitchen, bathroom (if medication)"
+    },
+    "spoon": {
+      "priority": "MEDIUM",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["kitchen drawer", "dishwasher", "dining table"],
+      "alzheimer_notes": "Needed for eating; easily replaced",
+      "search_assistance": "Check silverware drawer, dishwasher, sink"
+    },
+    "fork": {
+      "priority": "MEDIUM",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["kitchen drawer", "dishwasher", "dining table"],
+      "alzheimer_notes": "Needed for eating; easily replaced",
+      "search_assistance": "Check silverware drawer, dishwasher, sink"
+    },
+    "knife": {
+      "priority": "MEDIUM",
+      "loss_frequency": "low",
+      "safety_risk": "medium",
+      "typical_locations": ["kitchen drawer", "dishwasher", "cutting board"],
+      "alzheimer_notes": "Needed for eating; minor safety concern if sharp",
+      "search_assistance": "Check silverware drawer, dishwasher, kitchen counter"
+    },
+    "clock": {
+      "priority": "HIGH",
+      "loss_frequency": "low",
+      "safety_risk": "medium",
+      "typical_locations": ["nightstand", "wall", "kitchen"],
+      "alzheimer_notes": "Critical for time orientation; reduces confusion",
+      "search_assistance": "Usually wall-mounted or on nightstand"
+    },
+    "chair": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "low",
+      "typical_locations": ["dining room", "bedroom", "living room"],
+      "alzheimer_notes": "Stationary furniture; not typically lost",
+      "search_assistance": "Fixed location; check usual rooms"
+    },
+    "couch": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "low",
+      "typical_locations": ["living room", "bedroom"],
+      "alzheimer_notes": "Stationary furniture; items often lost IN/UNDER it",
+      "search_assistance": "Check cushions and underneath for lost items"
+    },
+    "bed": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "low",
+      "typical_locations": ["bedroom"],
+      "alzheimer_notes": "Stationary furniture; important for rest routine",
+      "search_assistance": "Check under pillows for lost items"
+    },
+    "dining table": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "low",
+      "typical_locations": ["dining room", "kitchen"],
+      "alzheimer_notes": "Stationary furniture; items often left ON it",
+      "search_assistance": "Check surface for misplaced items"
+    },
+    "toilet": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "low",
+      "typical_locations": ["bathroom"],
+      "alzheimer_notes": "Fixed location; important for orientation",
+      "search_assistance": "Bathroom landmark for navigation"
+    },
+    "tv": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "low",
+      "typical_locations": ["living room", "bedroom"],
+      "alzheimer_notes": "Stationary; provides cognitive stimulation and routine",
+      "search_assistance": "Fixed location; focus on finding remote instead"
+    },
+    "laptop": {
+      "priority": "HIGH",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["desk", "coffee table", "bed"],
+      "alzheimer_notes": "May forget location; contains important information",
+      "search_assistance": "Check desk, tables, bedroom"
+    },
+    "mouse": {
+      "priority": "MEDIUM",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["desk", "near laptop"],
+      "alzheimer_notes": "Needed for computer use; easily replaced",
+      "search_assistance": "Check desk, near computer"
+    },
+    "keyboard": {
+      "priority": "MEDIUM",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["desk"],
+      "alzheimer_notes": "Needed for computer use; usually stationary",
+      "search_assistance": "Check desk"
+    },
+    "toothbrush": {
+      "priority": "HIGH",
+      "loss_frequency": "medium",
+      "safety_risk": "medium",
+      "typical_locations": ["bathroom", "travel bag"],
+      "alzheimer_notes": "Essential for hygiene routine; forgetting to brush is common",
+      "search_assistance": "Check bathroom counter, cup holder, travel bag"
+    },
+    "umbrella": {
+      "priority": "MEDIUM",
+      "loss_frequency": "high",
+      "safety_risk": "low",
+      "typical_locations": ["entryway", "car", "closet"],
+      "alzheimer_notes": "Frequently forgotten when leaving; weather protection",
+      "search_assistance": "Check near door, coat closet, car"
+    },
+    "backpack": {
+      "priority": "MEDIUM",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["bedroom", "closet", "near door"],
+      "alzheimer_notes": "May contain important items; check inside",
+      "search_assistance": "Check bedroom, closet, entryway"
+    },
+    "tie": {
+      "priority": "LOW",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["closet", "bedroom", "dresser"],
+      "alzheimer_notes": "May forget how to tie; clothing item",
+      "search_assistance": "Check closet, dresser, chair"
+    },
+    "suitcase": {
+      "priority": "MEDIUM",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["closet", "bedroom", "attic"],
+      "alzheimer_notes": "Used for travel; ensure not unpacking same suitcase repeatedly",
+      "search_assistance": "Check closet, under bed, storage room"
+    },
+    "frisbee": {
+      "priority": "LOW",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["yard", "garage", "toy box"],
+      "alzheimer_notes": "Recreational item; physical activity beneficial",
+      "search_assistance": "Check outdoor areas, garage"
+    },
+    "skis": {
+      "priority": "LOW",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["garage", "basement", "storage"],
+      "alzheimer_notes": "Recreational equipment; rarely used",
+      "search_assistance": "Check storage areas"
+    },
+    "baseball bat": {
+      "priority": "LOW",
+      "loss_frequency": "low",
+      "safety_risk": "medium",
+      "typical_locations": ["garage", "closet", "bedroom"],
+      "alzheimer_notes": "Recreational or security item; minor safety concern",
+      "search_assistance": "Check garage, closet"
+    },
+    "baseball glove": {
+      "priority": "LOW",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["garage", "closet"],
+      "alzheimer_notes": "Recreational item",
+      "search_assistance": "Check garage, sports equipment area"
+    },
+    "skateboard": {
+      "priority": "LOW",
+      "loss_frequency": "low",
+      "safety_risk": "medium",
+      "typical_locations": ["garage", "near door"],
+      "alzheimer_notes": "Recreational; tripping hazard if left out",
+      "search_assistance": "Check garage, near entrance"
+    },
+    "surfboard": {
+      "priority": "LOW",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["garage", "outdoor storage"],
+      "alzheimer_notes": "Recreational equipment; rarely used",
+      "search_assistance": "Check garage, outdoor storage"
+    },
+    "tennis racket": {
+      "priority": "LOW",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["closet", "garage"],
+      "alzheimer_notes": "Recreational item; physical activity beneficial",
+      "search_assistance": "Check closet, sports equipment area"
+    },
+    "wine glass": {
+      "priority": "MEDIUM",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["kitchen", "dining table", "dishwasher"],
+      "alzheimer_notes": "Fragile; may forget location",
+      "search_assistance": "Check kitchen cabinets, dishwasher"
+    },
+    "bowl": {
+      "priority": "MEDIUM",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["kitchen", "dining table", "dishwasher"],
+      "alzheimer_notes": "Needed for eating; easily replaced",
+      "search_assistance": "Check kitchen cabinets, dishwasher"
+    },
+    "banana": {
+      "priority": "MEDIUM",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["kitchen counter", "refrigerator"],
+      "alzheimer_notes": "Healthy snack; may forget to eat",
+      "search_assistance": "Check fruit bowl, kitchen counter"
+    },
+    "apple": {
+      "priority": "MEDIUM",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["kitchen counter", "refrigerator"],
+      "alzheimer_notes": "Healthy snack; may forget to eat",
+      "search_assistance": "Check fruit bowl, refrigerator"
+    },
+    "sandwich": {
+      "priority": "MEDIUM",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["kitchen", "dining table", "refrigerator"],
+      "alzheimer_notes": "Prepared food; may forget if already eaten",
+      "search_assistance": "Check refrigerator, kitchen counter"
+    },
+    "orange": {
+      "priority": "MEDIUM",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["kitchen counter", "refrigerator"],
+      "alzheimer_notes": "Healthy snack; may forget to eat",
+      "search_assistance": "Check fruit bowl, refrigerator"
+    },
+    "broccoli": {
+      "priority": "MEDIUM",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["refrigerator", "kitchen"],
+      "alzheimer_notes": "Healthy food; may forget to cook",
+      "search_assistance": "Check refrigerator, vegetable drawer"
+    },
+    "carrot": {
+      "priority": "MEDIUM",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["refrigerator", "kitchen"],
+      "alzheimer_notes": "Healthy food; may forget to cook",
+      "search_assistance": "Check refrigerator, vegetable drawer"
+    },
+    "hot dog": {
+      "priority": "MEDIUM",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["refrigerator", "kitchen"],
+      "alzheimer_notes": "Prepared food; check expiration",
+      "search_assistance": "Check refrigerator"
+    },
+    "pizza": {
+      "priority": "MEDIUM",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["refrigerator", "kitchen counter", "oven"],
+      "alzheimer_notes": "Prepared food; may forget if oven is on",
+      "search_assistance": "Check refrigerator, check oven safety"
+    },
+    "donut": {
+      "priority": "LOW",
+      "loss_frequency": "medium",
+      "safety_risk": "low",
+      "typical_locations": ["kitchen counter", "pantry"],
+      "alzheimer_notes": "Snack food; may forget if already eaten",
+      "search_assistance": "Check kitchen counter, pantry"
+    },
+    "cake": {
+      "priority": "LOW",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["refrigerator", "kitchen counter"],
+      "alzheimer_notes": "Dessert; may forget if already eaten",
+      "search_assistance": "Check refrigerator, countertop"
+    },
+    "potted plant": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "low",
+      "typical_locations": ["window sill", "living room", "patio"],
+      "alzheimer_notes": "Stationary decoration; may forget to water",
+      "search_assistance": "Check usual plant locations"
+    },
+    "vase": {
+      "priority": "LOW",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["table", "shelf", "kitchen"],
+      "alzheimer_notes": "Decorative item; fragile",
+      "search_assistance": "Check tables, shelves"
+    },
+    "scissors": {
+      "priority": "MEDIUM",
+      "loss_frequency": "high",
+      "safety_risk": "medium",
+      "typical_locations": ["drawer", "desk", "kitchen"],
+      "alzheimer_notes": "Frequently misplaced; minor safety concern",
+      "search_assistance": "Check junk drawer, desk, kitchen drawer"
+    },
+    "teddy bear": {
+      "priority": "MEDIUM",
+      "loss_frequency": "low",
+      "safety_risk": "low",
+      "typical_locations": ["bedroom", "bed", "chair"],
+      "alzheimer_notes": "Comfort item; sentimental value",
+      "search_assistance": "Check bed, bedroom chair"
+    },
+    "hair drier": {
+      "priority": "MEDIUM",
+      "loss_frequency": "medium",
+      "safety_risk": "medium",
+      "typical_locations": ["bathroom", "bedroom"],
+      "alzheimer_notes": "Grooming item; may forget to turn off",
+      "search_assistance": "Check bathroom cabinet, under sink"
+    },
+    "toaster": {
+      "priority": "MEDIUM",
+      "loss_frequency": "very_low",
+      "safety_risk": "medium",
+      "typical_locations": ["kitchen counter"],
+      "alzheimer_notes": "Appliance; may forget if in use (fire hazard)",
+      "search_assistance" "Usually stays on kitchen counter"
+    },
+    "oven": {
+      "priority": "CRITICAL",
+      "loss_frequency": "very_low",
+      "safety_risk": "very_high",
+      "typical_locations": ["kitchen"],
+      "alzheimer_notes": "MAJOR SAFETY CONCERN - may forget if turned on",
+      "search_assistance": "Fixed location; implement burn/gas leak detection"
+    },
+    "microwave": {
+      "priority": "MEDIUM",
+      "loss_frequency": "very_low",
+      "safety_risk": "medium",
+      "typical_locations": ["kitchen counter"],
+      "alzheimer_notes": "Appliance; may forget food inside or that it's running",
+      "search_assistance": "Fixed kitchen location; check if in use"
+    },
+    "refrigerator": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "low",
+      "typical_locations": ["kitchen"],
+      "alzheimer_notes": "Stationary; may forget contents or leave door open",
+      "search_assistance": "Fixed kitchen location"
+    },
+    "sink": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "medium",
+      "typical_locations": ["kitchen", "bathroom"],
+      "alzheimer_notes": "Stationary; may forget running water (flood risk)",
+      "search_assistance": "Fixed location; water leak detection beneficial"
+    },
+    "stop sign": {
+      "priority": "CRITICAL",
+      "loss_frequency": "very_low",
+      "safety_risk": "very_high",
+      "typical_locations": ["street corners", "outdoor"],
+      "alzheimer_notes": "Safety landmark; important for orientation during walks",
+      "search_assistance": "Outdoor navigation aid; wandering prevention"
+    },
+    "parking meter": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "low",
+      "typical_locations": ["street", "parking lot"],
+      "alzheimer_notes": "Outdoor landmark; may forget to pay",
+      "search_assistance": "Outdoor navigation reference"
+    },
+    "bench": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "low",
+      "typical_locations": ["park", "outdoor", "entryway"],
+      "alzheimer_notes": "Seating; may forget personal items left on bench",
+      "search_assistance": "Check if belongings were left behind"
+    },
+    "fire hydrant": {
+      "priority": "LOW",
+      "loss_frequency": "very_low",
+      "safety_risk": "low",
+      "typical_locations": ["street"],
+      "alzheimer_notes": "Outdoor landmark for orientation",
+      "search_assistance": "Navigation reference point"
+    },
+    "traffic light": {
+      "priority": "CRITICAL",
+      "loss_frequency": "very_low",
+      "safety_risk": "very_high",
+      "typical_locations": ["intersections"],
+      "alzheimer_notes": "Safety landmark; critical for crossing streets safely",
+      "search_assistance": "Crossing assistance; wandering prevention"
+    }
+  }
+}
